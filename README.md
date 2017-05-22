@@ -2,19 +2,17 @@
 
 >[http://codepen.io/jawil/full/EWJRMN/](http://codepen.io/jawil/full/EWJRMN/)
 
- ```
- /**
+ ```text
   * [lazyImage plugin]
   * 基于ES6的轻量级，高性能，简单的图片懒加载插件
   * @Author  jawil
   * @date    2017-05-22
   * @param   {object}   插件配置参数
-  */
  ```
 
 #### 示例：
 
- ```
+ ```JavaScript
  new Lazy({
         containerId: context, //图片顶层容器
         offset: 100, //在定义可视区的范围内开始加载
@@ -29,5 +27,5 @@
 
 图片有点大，稍等片刻。建议上面Demo效果预览地址进行预览。
 
-![](http://oo2r9rnzp.bkt.clouddn.com/2017-04-08%2022.39.33.gif)
+![](https://segmentfault.com/img/remote/1460000008997803?w=444&h=575)
 
