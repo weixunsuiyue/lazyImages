@@ -22,14 +22,14 @@
         containerId: context, //图片顶层容器
         offset: 100, //在定义可视区的范围内开始加载
         throttle: 250, //250ms触发一次元素scroll时间，函数节流防抖
-        unload: true, //一旦图片不在可视区就移除已经加载的图片
+        unload: false, //一旦图片不在可视区就移除已经加载的图片
         callback: function(element, op) { //图片加载完成之后的回调函数
             //doSomething
         }
     }
 
     //函数节流防抖
-    const throtte = function(fn, interval = 250) {
+    const throttle = function(fn, interval = 250) {
         let timer,
             firstTime = true
         return function() {
@@ -90,7 +90,7 @@
             this.render()
 
             //containerId默认是window全局对象，函数节流
-            this.opts.containerId.addEventListener('scroll', throtte(f => {
+            this.opts.containerId.addEventListener('scroll', throttle(f => {
                 this.render()
             }, 1000), false)
 
@@ -150,7 +150,7 @@
 
         //页面没有任何data-lazy属性时候，移除滚动事件
         detach() {
-            this.opts.containerId.removeEventListener('scroll', throtte)
+            this.opts.containerId.removeEventListener('scroll', throttle)
         }
     }
 
