@@ -17,7 +17,7 @@
         containerId: context, //图片顶层容器
         offset: 100, //在定义可视区的范围内开始加载
         throttle: 250, //250ms触发一次元素scroll时间，函数节流防抖
-        unload: true, //一旦图片不在可视区就移除已经加载的图片
+        unload: false, //一旦图片不在可视区就移除已经加载的图片
         callback: function(element, op) { //图片加载完成之后的回调函数
             //doSomething
         })
