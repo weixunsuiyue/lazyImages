@@ -14,7 +14,7 @@
 
  ```JavaScript
  new Lazy({
-        containerId: context, //图片顶层容器
+        containerId: window, //图片顶层容器
         offset: 100, //在定义可视区的范围内开始加载
         throttle: 250, //250ms触发一次元素scroll时间，函数节流防抖
         unload: false, //一旦图片不在可视区就移除已经加载的图片
