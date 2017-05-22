@@ -1,6 +1,6 @@
 #### 基于ES6的轻量级，高性能，简单的图片懒加载插件
 
->[http://codepen.io/jawil/full/EWJRMN/](http://codepen.io/jawil/full/WRBxya/)
+>[http://codepen.io/jawil/full/EWJRMN/](http://codepen.io/jawil/full/EWJRMN/)
 
  ```
  /**
